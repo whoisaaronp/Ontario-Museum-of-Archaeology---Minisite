@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- very important to include this tag, set the site size to equal the device width -->
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Ontario Museum of Archaeology - Responsive Website</title>
+	<link rel="stylesheet" href="css/hamburger.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<!-- tile centered -->
+		<div class="logo-container">
+			<h1 class="hidden">Site Header Logo</h1>
+			<a href="index.html"><img src="images/moalogo_final_transparent.png" alt="Ontario Museum of Archaeology Logo"></a>
+		</div>
+		<!-- menu links -->
+		<nav>
+			<h2 class="hidden">Navigation</h2>
+			<ul class="nav-links">
+				<li class="nav-link"><a href="index.html">home</a></li>
+				<li class="nav-link"><a href="howto.html">how it works</a></li>
+				<li class="nav-link"><a href="aboutus.html">about us</a></li>
+			</ul>
+
+			<button class="hamburger hamburger--elastic" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+		</nav>
+	</header>
+	<!-- main content -->
+	<main class="main">
+		<!-- hero content -->
+		<div class="splash-page">
+			<section class="feature-content">
+				<h2 class="hidden">Feature Content</h2>
+				<h3 class="sub-head">Learn about the Lawson sight AR experience</h3>
+				<p>One of only a few village sites where earthworks are preserved The Lawson site is a 500-year-old
+					village situated on a flat plateau overlooking Medway River and Snake Creek in northwest London. The
+					Ontario Museum of Archaeology approached us at the Fanshawe College Data Visualization program with
+					a problem they were having in terms of preserving their Longhouse sight. After some research on
+					solving the problem, we decided to use artificial technology to create an experience where visitors
+					can see a digital representation of the longhouse and other artifacts that is not accessible
+					psychically to the public. </p>
+				<div class=download-button>Download App</div>
+			</section>
+			<picture class="hero-image">
+				<!-- images -->
+				<img  class="longhouse" src="images/hero-image-longhouse.svg" alt="Longhouse Illustration Image">
+			</picture>
+		</div>
+		<footer>
+			<h2 class="hidden">Footer</h2>
+			<small>&copy;Copyright 2020, Museum of Ontario Archaeology</small>
+		</footer>
+	</main>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
