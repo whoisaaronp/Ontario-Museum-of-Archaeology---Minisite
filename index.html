@@ -21,6 +21,11 @@
 	<meta name="msapplication-TileColor" content="#ff9314">
 	<meta name="msapplication-config" content="images/icon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-sytle" content="white">
+	<meta name="apple-mobile-web-app-title" content="MOA - Minisite">
+	<link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
 </head>
 
 <body>
@@ -74,6 +79,15 @@
 		</footer>
 	</main>
 
+	<script>
+		// check that service workers are supported
+		if ('serviceWorker' in navigator) {
+			// use the window load event to keep the page load performant
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('sw.js');
+			});
+		}
+	</script>
 	<script src="js/main.js"></script>
 </body>
 
