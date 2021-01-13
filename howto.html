@@ -7,7 +7,7 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Ontario Museum of Archaeology - Responsive Website</title>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 	<link rel="stylesheet" href="css/hamburger.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,8 @@
 		<!-- tile centered -->
 		<div class="logo-container">
 			<h1 class="hidden">Site Header Logo</h1>
-			<a href="index.html"><img src="images/moalogo_final_transparent.png" alt="Ontario Museum of Archaeology Logo">
+			<a href="index.html"><img src="images/moalogo_final_transparent.png"
+					alt="Ontario Museum of Archaeology Logo">
 			</a>
 		</div>
 		<!-- menu links -->
@@ -53,50 +54,53 @@
 				<h2 class=hidden>Icons illustrating how to launch application</h2>
 				<!-- 1 -->
 				<div class="two-column">
-					<picture class="image-con">
-						<img src="images/hand-icon-1.svg" alt="Model hand holding a phone or mobile device">
-						<p>1. Open archaeologymuseum.ca
-							and click ‘Download AR app’ button.</p>
-					</picture>
-					<!-- 2 -->
-					<picture class="image-con">
-						<img src="images/scan-qrcode-2.svg" alt="Scan the QR code photo">
+					<div class="column-content">
+						<picture class="image-con">
+							<img src="images/artboard1.jpg" alt="Model hand holding a phone or mobile device">
+						</picture>
+						<p>1. Open archaeologymuseum.ca and click ‘Download AR app’ button.</p>
+					</div>
+					<div class="column-content">
+						<!-- 2 -->
+						<picture class="image-con">
+							<img src="images/artboard2.jpg" alt="Scan the QR code photo">
+						</picture>
 						<p>2. Scan the QR code from our sign using our branded Augmented Reality application.</p>
-					</picture>
+					</div>
 				</div>
-				<!-- 3 -->
-				<div class="two-column ar-girl">
-					<picture class="image-con">
-						<img src="images/view-item-3.svg" alt="Place your object in the AR space">
-						<p>3. Choose the ‘AR’ option to view your
-							artifact in real space.</p>
-					</picture>
-					<!-- 4 -->
-					<picture class="image-con">
-						<img src="images/object-mode-4.svg" alt="iPhone device displayign object mode">
+				<div class="two-column">
+					<div class="column-content">
+						<!-- 3 -->
+						<picture class="image-con">
+							<img src="images/artboard5.jpg" alt="Place your object in the AR space">
+						</picture>
+						<p>3. Choose the ‘AR’ option to view your artifact in real space.</p>
+					</div>
+					<div class="column-content">
+						<!-- 4 -->
+						<picture class="image-con">
+							<img src="images/artboard6.jpg" alt="iPhone device displayign object mode">
+						</picture>
 						<p>4. Alternatively select 'object' mode if your phone doesn’t have the AR camera feature.</p>
-					</picture>
+					</div>
 				</div>
 			</section>
 			<!-- examples -->
-			<section>
+			<section class="examples">
 				<h2 class="hidden">Examples on the web</h2>
 				<h3 class="sub-head title-center">Examples you can try out</h3>
 				<div class="sample-pots">
 					<!-- 1 -->
-					<model-viewer src="assets/3d/mohawk-pot.gltf" alt="Lawson site 3D model" auto-rotate
-						camera-controls autoplay poster="images/mohawkpot.png" ar
-						ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
-						ios-src="assets/usdz/mohawk.usdz">
+					<model-viewer src="assets/3d/mohawk-pot.gltf" alt="Lawson site 3D model" auto-rotate camera-controls
+						autoplay poster="images/mohawkpot.png" ar ar-modes="webxr scene-viewer quick-look"
+						ar-scale="auto" ios-src="assets/usdz/mohawk.usdz">
 					</model-viewer>
-					<model-viewer src="assets/3d/narrow-pot.gltf" alt="Lawson site 3D model" auto-rotate
-						camera-controls autoplay poster="images/cindys-pot" ar
-						ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+					<model-viewer src="assets/3d/narrow-pot.gltf" alt="Lawson site 3D model" auto-rotate camera-controls
+						autoplay poster="images/cindys-pot" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
 						ios-src="assets/usdz/cindy_pot.usdz">
 					</model-viewer>
-					<model-viewer src="assets/3d/narrow-pot.gltf" alt="Lawson site 3D model" auto-rotate
-						camera-controls autoplay poster="images/cindys-pot" ar
-						ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+					<model-viewer src="assets/3d/narrow-pot.gltf" alt="Lawson site 3D model" auto-rotate camera-controls
+						autoplay poster="images/cindys-pot" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
 						ios-src="assets/usdz/cindy_pot.usdz">
 					</model-viewer>
 				</div>
