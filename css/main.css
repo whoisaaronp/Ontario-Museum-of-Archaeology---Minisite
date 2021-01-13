@@ -282,6 +282,11 @@ footer small {
 	margin: 0 auto;
 }
 
+model-viewer {
+    margin-left: 20px;
+	height: 30vh;
+	width: 30vw;
+}
 /********** MEDIA QUERIES ********** */
 
 /*************************************/
@@ -297,6 +302,11 @@ footer small {
 @media screen and (max-width:768px) {
 	body {
 		overflow-x: hidden;
+	}
+
+	model-viewer {
+		height: 40vh;
+		width: 70vw;
 	}
 	/* main container */
 	.main {
@@ -328,7 +338,7 @@ footer small {
 		font-weight: 200;
 	}
 	.nav-links li {
-		opacity: 0px;
+		opacity: 0;
 	}
 	.splash-page {
 		display: flex;
@@ -363,10 +373,10 @@ footer small {
 		align-items: center;
 		justify-content: space-evenly;
 	}
-	.sample-pots>div {
+	.sample-pots>model-viewer {
 		cursor: pointer;
 		justify-content: space-around;
-		margin-bottom: 50px;
+		margin-bottom: 110px;
 	}
 	.mission-statement {
 		width: 85%;
@@ -444,7 +454,7 @@ footer small {
 		transform: translateX(50px);
 	}
 	to {
-		opacity: 1px;
+		opacity: 1;
 		-o-transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 		-moz-transform: translateX(0%);
@@ -452,3 +462,4 @@ footer small {
 		transform: translateX(0px);
 	}
 }
+
