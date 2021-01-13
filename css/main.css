@@ -26,6 +26,7 @@ button {
 html,
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
   overflow-x: hidden;
 }
 
