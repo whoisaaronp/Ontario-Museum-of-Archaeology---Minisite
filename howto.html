@@ -6,6 +6,8 @@
 	<!-- very important to include this tag, set the site size to equal the device width -->
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Ontario Museum of Archaeology - Responsive Website</title>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 	<link rel="stylesheet" href="css/hamburger.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -17,8 +19,8 @@
 		<!-- tile centered -->
 		<div class="logo-container">
 			<h1 class="hidden">Site Header Logo</h1>
-			<a href="index.html"><img src="images/moalogo_final_transparent.png"
-					alt="Ontario Museum of Archaeology Logo"></a>
+			<a href="index.html"><img src="images/moalogo_final_transparent.png" alt="Ontario Museum of Archaeology Logo">
+			</a>
 		</div>
 		<!-- menu links -->
 		<nav>
@@ -85,37 +87,24 @@
 					<model-viewer src="assets/3d/mohawk-pot.gltf" alt="Lawson site 3D model" auto-rotate
 						camera-controls autoplay poster="images/mohawkpot.png" ar
 						ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
-						ios-src="assets/usdz/images/mohawk.usdz">
+						ios-src="assets/usdz/mohawk.usdz">
 					</model-viewer>
 					<model-viewer src="assets/3d/narrow-pot.gltf" alt="Lawson site 3D model" auto-rotate
 						camera-controls autoplay poster="images/cindys-pot" ar
 						ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
-						ios-src="assets/usdz/images/cindy_pot.usdz">
+						ios-src="assets/usdz/cindy_pot.usdz">
 					</model-viewer>
 					<model-viewer src="assets/3d/narrow-pot.gltf" alt="Lawson site 3D model" auto-rotate
 						camera-controls autoplay poster="images/cindys-pot" ar
 						ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
-						ios-src="assets/usdz/images/cindy_pot.usdz">
+						ios-src="assets/usdz/cindy_pot.usdz">
 					</model-viewer>
-					
-					<!-- <div>
-						<a href="images/mohawk.usdz" rel="ar"></a>
-						<img src="images/mohawkpot.png" alt="Photo of a  sample AR object">
-					</div>
-					<div>
-						<a href="images/cadences_pot.usdz" rel="ar"></a>
-						<img src="images/cadence-pot.png" alt="Photo of a  sample AR object">
-					</div>
-					<div>
-						<a href="images/cindy_pot.usdz" rel="ar"></a>
-						<img src="images/cindys-pot.png" alt="Photo of a  sample AR object">
-					</div> -->
 				</div>
 			</section>
 		</section>
 		<footer>
 			<h2 class="hidden">Footer</h2>
-			<small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+			<small>&copy; Copyright 2021, Museum of Ontario Archaeology</small>
 		</footer>
 	</main>
 
