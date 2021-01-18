@@ -329,6 +329,14 @@ model-viewer {
 .examples {
   margin-top: 120px;
 }
+
+.model-viewer
+{
+  padding-top: 2px;
+  width: 24px;
+  height: 24px;
+
+}
 /********** MEDIA QUERIES ********** */
 
 /*************************************/
